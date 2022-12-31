@@ -2,7 +2,11 @@
 // However, function parameters can be generic
 
 fn pick_one<T>(a: T, b: T) -> T {
-    if std::process::id() % 2 == 0 { a } else { b }
+    if std::process::id() % 2 == 0 {
+        a
+    } else {
+        b
+    }
 }
 
 fn main() {
