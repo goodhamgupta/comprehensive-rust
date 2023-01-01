@@ -62,8 +62,8 @@ impl Library {
 fn main() {
     let mut library: Library = Library::new();
     println!("Our library is empty: {}", &library.is_empty());
-    &library.add_book(Book::new("Lord of the Rings", 1954));
-    &library.add_book(Book::new("Alice adventure", 1865));
+    let _ = &library.add_book(Book::new("Lord of the Rings", 1954));
+    let _ = &library.add_book(Book::new("Alice adventure", 1865));
 
     &library.print_books();
 
