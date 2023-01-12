@@ -26,11 +26,7 @@ pub fn luhn(cc_number: &str) -> bool {
             }
         }
         let total = even_digit_sum + odd_digit_sum;
-        if total % 10 == 0 {
-            true
-        } else {
-            false
-        }
+        total % 10 == 0
     } else {
         false
     }
