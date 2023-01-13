@@ -50,7 +50,8 @@ pub fn prefix_matches(prefix: &str, request_path: &str) -> bool {
     let request_paths = request_path
         .split("/")
         .map(|p| Some(p))
-        .chain(std::iter::once(None));
+        .chain(std::iter::once(None)); // append a None at the end of the string to help
+                                       // terminate the loop
 
     for (prefix, request_path) in prefixes.zip(request_paths) {
         match request_path {
