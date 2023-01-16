@@ -1,4 +1,4 @@
-// try-oeprator `?` is used to return errors to the caller
+// try-operator `?` is used to return errors to the caller
 // allows conversion of the following script
 // match some_exp {
 //  Ok(value) => value,
